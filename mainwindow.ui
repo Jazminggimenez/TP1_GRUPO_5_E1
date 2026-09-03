@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>842</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: #0D0D0D</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_0">
+       <widget class="QLabel" name="labelINICIARSESION">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>150</y>
+          <width>321</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size: 28px;
+font-weight: bold;
+color: white;
+background-color: #172238;
+padding: 10px;
+border-radius: 8px;</string>
+        </property>
+        <property name="text">
+         <string>     INICIAR SESION</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditUsuario">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>240</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditContrasena">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>300</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="accessibleDescription">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>240</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #AEB7C4</string>
+        </property>
+        <property name="text">
+         <string> Usuario:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>300</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #AEB7C4</string>
+        </property>
+        <property name="text">
+         <string> Contraseña:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_Ingresar">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>370</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #EEF1F4;
+    color: #263238;
+    border: 1px solid #D8DEE4;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #E1E6EB;
+    border: 1px solid #B8C2CC;
+}
+
+QPushButton:pressed {
+    background-color: #D5DCE2;
+}</string>
+        </property>
+        <property name="text">
+         <string>Ingresar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>30</y>
+          <width>131</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="locale">
+         <locale language="Swedish" country="Sweden"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../4639248.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_1">
+       <widget class="QPushButton" name="pushButtonListaDeEspera">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>230</y>
+          <width>191</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #EEF1F4;
+    color: #263238;
+    border: 1px solid #D8DEE4;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #E1E6EB;
+    border: 1px solid #B8C2CC;
+}
+
+QPushButton:pressed {
+    background-color: #D5DCE2;
+}</string>
+        </property>
+        <property name="text">
+         <string>Lista de espera</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonProximoEnAtender">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>230</y>
+          <width>191</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #EEF1F4;
+    color: #263238;
+    border: 1px solid #D8DEE4;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #E1E6EB;
+    border: 1px solid #B8C2CC;
+}
+
+QPushButton:pressed {
+    background-color: #D5DCE2;
+}</string>
+        </property>
+        <property name="text">
+         <string>Proximo en atender</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonAtenderPaciente">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>140</y>
+          <width>191</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #EEF1F4;
+    color: #263238;
+    border: 1px solid #D8DEE4;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #E1E6EB;
+    border: 1px solid #B8C2CC;
+}
+
+QPushButton:pressed {
+    background-color: #D5DCE2;
+}</string>
+        </property>
+        <property name="text">
+         <string>Atender paciente</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonPacientesAtendidos">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>140</y>
+          <width>191</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #EEF1F4;
+    color: #263238;
+    border: 1px solid #D8DEE4;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #E1E6EB;
+    border: 1px solid #B8C2CC;
+}
+
+QPushButton:pressed {
+    background-color: #D5DCE2;
+}</string>
+        </property>
+        <property name="text">
+         <string>Pacientes atendidos</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_Salir">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>430</y>
+          <width>191</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #B71C1C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Cerrar Sesion</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>821</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #0D47A1;
+border: none;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QLabel" name="labelTITULO">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>10</y>
+           <width>441</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+font-size: 22px;
+font-weight: bold;
+</string>
+         </property>
+         <property name="text">
+          <string>    SISTEMA DE GESTION HOSPITALARIA</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelCRUZ">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>101</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../OIP (2).webp</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widgetDATOS" native="true">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>140</y>
+          <width>291</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #FFFFFF;
+border: 1px solid #E0E6ED;
+border-radius: 14px;</string>
+        </property>
+        <widget class="QLabel" name="labelIngresoDePacientes">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>30</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>INGRESO DE PACIENTE</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditNombre">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>65</y>
+           <width>161</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 7px;
+    padding: 8px 10px;
+    color: #263238;
+    font-size: 13px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1976D2;
+}</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditApellido">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>110</y>
+           <width>161</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 7px;
+    padding: 8px 10px;
+    color: #263238;
+    font-size: 13px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1976D2;
+}</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>71</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nombre:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>71</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Apellido:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>170</y>
+           <width>63</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>DNI:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>210</y>
+           <width>63</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Genero:</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButtonGuardarPaciente">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>300</y>
+           <width>161</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #1565C0;
+}
+
+QPushButton:pressed {
+    background-color: #0D47A1;
+}</string>
+         </property>
+         <property name="text">
+          <string>Guardar Paciente</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditDni">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>160</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 7px;
+    padding: 8px 10px;
+    color: #263238;
+    font-size: 13px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1976D2;
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>SIN PUNTOS</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBoxGenero">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>210</y>
+           <width>161</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>    Seleccionar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MASCULINO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FEMENINO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OTRO</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>250</y>
+           <width>63</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Edad:</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="spinBoxEdad">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>250</y>
+           <width>161</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="labelENFERMERO">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>320</y>
+          <width>131</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../OneDrive/Archivos de Microsoft Copilot Chat/TP PROGRAMACION 2/png-transparent-nurse-care-illustration.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>842</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
